@@ -1,144 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
+                <!-- Google tag (gtag.js) -->
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-D7R7TRNNYP"></script>
+                <script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    
+                    gtag('config', 'G-D7R7TRNNYP');
+                </script>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transparência ECONX</title>
+    <link rel="icon" href="assets/icons/icon.svg" type="image/svg">
+    <meta property="og:image" content="/assets/icons/icon.svg">
+    <meta property="og:url" content="https://www.econx.com.br">
+    <meta property="og:type" content="website">
+    <meta name="author" content="ECONX SOLUÇÕES DIGITAIS E TECNOLOGIA">
+    <meta name="description" content="ECONX - Sustentabilidade e meio ambiente">
+    <meta name="keywords" content="ECONX, O futuro é verde, Sustentabilidade, meio ambiente, energia sustentável, emissão de carbono, ESG, GHG Certificações">
+    <title>ECONX - O futuro é verde!</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background-color: #004D74;
-    color: white;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header .logo img {
-    height: 40px;
-}
-
-header nav ul {
-    list-style-type: none;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.banner {
-    background-color: #007BB5;
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.transparency {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-.transparency-item {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.transparency-item h2 {
-    color: #004D74;
-    margin-bottom: 15px;
-}
-
-.transparency-item p {
-    margin-bottom: 15px;
-}
-
-.transparency-item a {
-    text-decoration: none;
-    color: #007BB5;
-    font-weight: bold;
-}
-
-footer {
-    background-color: #004D74;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-footer .social-media a {
-    margin: 0 10px;
-}
-
-@media (max-width: 768px) {
-    header nav ul {
-        text-align: center;
-    }
-
-    .transparency {
-        grid-template-columns: 1fr;
-    }
-}
-    </style>
-</head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shorthandcss@1.1.1/dist/shorthand.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="assets/css/styles.css"/>
+    </head>
+<body class="bg-gray-10 text-gray-800 font-sans">
     <!-- Header -->
     <header class="bg-white shadow">
         <div class="container mx-auto flex justify-between items-center py-4 px-6">
             <div class="logo">
-                <img src="logo.png" alt="ECONX Logo" class="h-10">
+                <img src="assets/icons/econx_group.svg" alt="ECONX Logo" class="h-10">
             </div>
             <nav>
                 <ul class="flex space-x-6">
-                    <li><a href="#" class="hover:text-blue-600">Início</a></li>
-                    <li><a href="#" class="hover:text-blue-600">Sobre</a></li>
-                    <li><a href="#" class="hover:text-blue-600">Serviços</a></li>
-                    <li><a href="#" class="hover:text-blue-600">Blog</a></li>
-                    <li><a href="#" class="hover:text-blue-600">Contato</a></li>
+                    <li><a href="https://www.econx.com.br" target="_blank" class="hover:text-blue-600">Voltar à homepage</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Banner -->
-    <section class="bg-blue-600 text-white text-center py-16">
-        <h1 class="text-4xl font-bold">Transparência ECONX</h1>
-        <p class="mt-4 text-lg">Compromisso com a clareza e responsabilidade em nossas operações.</p>
+    <!-- hero section -->
+    <section id="home" class="min-h-100vh flex justify-center items-center bg-blue-600">
+        <div class="text-center mx-5 md-mx-15">
+            
+            <div>
+                <h1 class="white fs-l2 lh-1-5 md-fs-l1 md-lh-1 fs-15 md-fs-xl1 fw-800 lh-2">
+                    <strong class="green"><</strong>
+                    <span id="dynamic-text"></span>
+                    <strong class="green">/></strong>
+                </h1>                  
+                <p class="indigo-lightest fs-m2 mb-5">Compromisso com a clareza e responsabilidade em nossas operações.</p>
+                    <p class="white opacity-75 fs-s1 mt-3">
+                        É gratuito. É rápido. É eficaz.
+                    </p>
+            </div>
+        </div>
     </section>
+
 
     <!-- Transparency Section -->
     <section class="container mx-auto py-16 px-6">
@@ -147,177 +70,123 @@ footer .social-media a {
             <div class="bg-white shadow-md rounded-lg p-6">
                 <h2 class="text-xl font-semibold mb-4">Receitas</h2>
                 <p class="text-gray-600">Informações sobre as fontes de receita da ECONX, incluindo contratos, parcerias e serviços prestados.</p>
-                <a href="#" class="text-blue-600 mt-4 inline-block hover:underline">Acesse nosso Relatório de Receitas 2024</a>
+                <a href="#" target="_blank noreferrer noopener" noreferrer noopener class="text-blue-600 mt-4 inline-block hover:underline">Acesse nosso Relatório de Receitas 2024</a>
             </div>
 
             <!-- Despesas -->
             <div class="bg-white shadow-md rounded-lg p-6">
                 <h2 class="text-xl font-semibold mb-4">Despesas</h2>
                 <p class="text-gray-600">Detalhamento das principais despesas operacionais, investimentos e custos administrativos.</p>
-                <a href="#" class="text-blue-600 mt-4 inline-block hover:underline">Consulte nosso Relatório de Despesas 2024</a>
+                <a href="#" target="_blank noreferrer noopener" noreferrer noopener class="text-blue-600 mt-4 inline-block hover:underline">Consulte nosso Relatório de Despesas 2024</a>
             </div>
 
             <!-- Licitações -->
             <div class="bg-white shadow-md rounded-lg p-6">
                 <h2 class="text-xl font-semibold mb-4">Licitações</h2>
                 <p class="text-gray-600">Informações sobre processos licitatórios em que a ECONX participou ou está participando.</p>
-                <a href="#" class="text-blue-600 mt-4 inline-block hover:underline">Veja nossas Licitações Recentes</a>
+                <a href="#" target="_blank noreferrer noopener" noreferrer noopener class="text-blue-600 mt-4 inline-block hover:underline">Veja nossas Licitações Recentes</a>
             </div>
 
             <!-- Folhas de Pagamento -->
             <div class="bg-white shadow-md rounded-lg p-6">
                 <h2 class="text-xl font-semibold mb-4">Folhas de Pagamento</h2>
                 <p class="text-gray-600">Dados sobre a remuneração de nossos colaboradores, respeitando a privacidade e conformidade legal.</p>
-                <a href="#" class="text-blue-600 mt-4 inline-block hover:underline">Acesse a Folha de Pagamento de Dezembro de 2024</a>
+                <a href="#" target="_blank noreferrer noopener" noreferrer noopener class="text-blue-600 mt-4 inline-block hover:underline">Acesse a Folha de Pagamento de Dezembro de 2024</a>
             </div>
 
             <!-- Convênios -->
             <div class="bg-white shadow-md rounded-lg p-6">
                 <h2 class="text-xl font-semibold mb-4">Convênios</h2>
                 <p class="text-gray-600">Detalhes sobre convênios firmados com outras entidades, incluindo objetivos e resultados alcançados.</p>
-                <a href="#" class="text-blue-600 mt-4 inline-block hover:underline">Conheça nossos Convênios Ativos</a>
+                <a href="#" target="_blank noreferrer noopener" noreferrer noopener class="text-blue-600 mt-4 inline-block hover:underline">Conheça nossos Convênios Ativos</a>
             </div>
 
             <!-- Leis e Decretos -->
             <div class="bg-white shadow-md rounded-lg p-6">
                 <h2 class="text-xl font-semibold mb-4">Leis e Decretos</h2>
                 <p class="text-gray-600">Informações sobre legislações e decretos que impactam as operações da ECONX.</p>
-                <a href="#" class="text-blue-600 mt-4 inline-block hover:underline">Leia as Leis e Decretos Relevantes</a>
+                <a href="#" target="_blank noreferrer noopener" noreferrer noopener class="text-blue-600 mt-4 inline-block hover:underline">Leia as Leis e Decretos Relevantes</a>
             </div>
         </div>
     </section>
 
-   <!-- footer -->
-   <footer id="contato" class="p-5 md-p-l5 bg-indigo-lightest-10">
-    <div class="flex flex-wrap">
-        <div class="md-w-25pc mb-10">
-            <img src="assets/icons/codever_logo.png" class="w-l5" alt="ECONX Logo">
-            <div class="white opacity-70 fs-s2 mt-4 md-pr-10">
-                <p>
-                    O futuro é
-                    <span class="green nowrap"> 
-                       verde
-                    </span>!
+    <footer class="bg-blue-600 text-white py-8">
+        <div class="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-16">
+            <!-- Logo e Slogan -->
+            <small>
+            <div>
+                <img src="assets/icons/codever_logo.png" alt="ECONX Logo" class="h-6 mb-4">
+                <p class="text-green-500">O futuro é <span class="text-green-400">verde</span>!</p>
+                <address class="not-italic mt-4">
+                    <strong class="text-green-400">Endereço:</strong><br>
+                    Av. Paulista, 779 - Jardins<br>
+                    São Paulo, SP - CEP 01.311-100 - Brasil
+                </address>
+                <p class="mt-2">
+                    <strong class="text-green-400">Contato:</strong><br>
+                    <a href="https://wa.me/5511934738412" class="text-white hover:underline">+55 (11) 93473-8412</a>
                 </p>
-                <br>
                 <p>
-                    <strong class="green">
-                        Endereço:
-                    </strong>
-                    <a href="https://www.google.com/maps/place/Av.+Paulista,+779+-+Bela+Vista,+São+Paulo+-+SP,+01311-100/@-23.5667407,-46.6531618,17z/data=!3m1!4b1!4m9!1m2!2m1!1sAv.+Paulista,+779+-+Jardins,+São+Paulo,+SP+-+CEP+01.311-100!3m5!1s0x94ce59b8c0b25813:0xec2c14b4b160f593!8m2!3d-23.5667407!4d-46.6505815!15sCjxBdi4gUGF1bGlzdGEsIDc3OSAtIEphcmRpbnMsIFPDo28gUGF1bG8sIFNQIC0gQ0VQIDAxLjMxMS0xMDCSARBnZW9jb2RlZF9hZGRyZXNz4AEA?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="white no-underline hover-underline">
-                        Av. Paulista, 779 - Jardins <br> São Paulo, SP - CEP 01.311-100 - Brasil
-                    </a>
-                    <br><br/>
-                    <strong class="green">
-                        Contato:
-                    </strong>
-                    <a href="https://wa.me/5511934738412" target="_blank" class="white no-underline hover-underline">+55 (11) 93473-8412</a>
-                    <br>
-                    <strong class="green">
-                        Email:
-                    </strong>
-                    <a href="malito:contato@econx.com.br" target="_blank" class="white no-underline hover-underline">contato@econx.com.br</a>
+                    <strong class="text-green-400">Email:</strong><br>
+                    <a href="mailto:contato@econx.com.br" class="text-white hover:underline">contato@econx.com.br</a>
                 </p>
             </div>
-        </div>
-
-        <!-- Company details -->
-        <div class="w-100pc md-w-50pc">
-            <div class="flex justify-around">
-                <div class="w-33pc md-px-10 mb-10">
-                    <h5 class="green">Empresa</h5>
-                    <ul class="list-none mt-5 fs-s2">
-                        <li class="my-3"><a href="#sobre"
-                                class="white opacity-70 no-underline hover-underline">Sobre</a></li>
-                        <li class="my-3"><a href="#servicos"
-                                class="white opacity-70 no-underline hover-underline">Serviços</a></li>
-                        <li class="my-3"><a href="#solucoes"
-                                class="white opacity-70 no-underline hover-underline">Soluções</a></li>
-                        <li class="my-3"><a href="https://founders.econx.com.br"
-                                class="white opacity-70 no-underline hover-underline">Diretoria</a></li>
-                    </ul>
-                </div>
-
-                <!-- Information: Blog, Jobs, Education, Media -->
-                <div class="w-33pc md-px-10 mb-10">
-                    <h5 class="green">Informações</h5>
-                    <ul class="list-none mt-5 fs-s2">
-                        <li class="my-3"><a href="https://blog.econx.com.br/"
-                                class="white opacity-70 no-underline hover-underline">Blog</a></li>
-                        <li class="my-3"><a href="https://www.econx.com.br/www.linkedin.com/company/econxbr/jobs/"
-                                class="white opacity-70 no-underline hover-underline">Emprego</a>
-                        </li>
-                        <li class="my-3"><a href="https://growth.econx.com.br/"
-                                class="white opacity-70 no-underline hover-underline">Estágio</a></li>
-                        <li class="my-3"><a href="https://growth.econx.com.br/validation/certificados"
-                                class="white opacity-70 no-underline hover-underline">Certificados</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Legal Information: Terms, Privacy and Licenses -->
-                <div class="w-33pc md-px-10 mb-10">
-                    <h5 class="green">Governança</h5>
-                    <ul class="list-none mt-5 fs-s2">
-                        <li class="my-3"><a href="https://terms.econx.com.br/#termos-de-uso"
-                                class="white opacity-70 no-underline hover-underline">Termos</a></li>
-                        <li class="my-3"><a href="https://terms.econx.com.br/#politicaprivacidade"
-                                class="white opacity-70 no-underline hover-underline">Privacidade</a>
-                        </li>
-                        <li class="my-3"><a href="https://terms.econx.com.br/#contratos"
-                                class="white opacity-70 no-underline hover-underline">Contratos</a></li>
-                        <li class="my-3"><a href="https://terms.econx.com.br/#license"
-                                class="white opacity-70 no-underline hover-underline">Licenças</a>
-                        </li>
-                    </ul>
-                </div>
-
+        </small>
+    
+            <!-- Empresa -->
+            <div>
+                <h5 class="text-lg font-semibold text-green-400">Empresa</h5>
+                <ul class="space-y-2 mt-4">
+                    <li><a href="https://www.econx.com.br/#sobre" class="hover:underline">Sobre</a></li>
+                    <li><a href="https://www.econx.com.br/#servicos" class="hover:underline">Serviços</a></li>
+                    <li><a href="https://www.econx.com.br/#solucoes" class="hover:underline">Soluções</a></li>
+                    <li><a href="https://founders.econx.com.br" class="hover:underline">Diretoria</a></li>
+                </ul>
+            </div>
+    
+            <!-- Informações -->
+            <div>
+                <h5 class="text-lg font-semibold text-green-400">Informações</h5>
+                <ul class="space-y-2 mt-4">
+                    <li><a href="https://blog.econx.com.br/" class="hover:underline">Blog</a></li>
+                    <li><a href="https://www.econx.com.br/www.linkedin.com/company/econxbr/jobs/" class="hover:underline">Emprego</a></li>
+                    <li><a href="https://growth.econx.com.br/" class="hover:underline">Estágio</a></li>
+                    <li><a href="https://growth.econx.com.br/validation/certificados" class="hover:underline">Certificados</a></li>
+                </ul>
+            </div>
+    
+            <!-- Governança -->
+            <div>
+                <h5 class="text-lg font-semibold text-green-400">Governança</h5>
+                <ul class="space-y-2 mt-4">
+                    <li><a href="https://terms.econx.com.br/#termos-de-uso" class="hover:underline">Termos</a></li>
+                    <li><a href="https://terms.econx.com.br/#politicaprivacidade" class="hover:underline">Privacidade</a></li>
+                    <li><a href="https://terms.econx.com.br/#contratos" class="hover:underline">Contratos</a></li>
+                    <li><a href="https://terms.econx.com.br/#license" class="hover:underline">Licenças</a></li>
+                </ul>
             </div>
         </div>
-        <div class="w-100pc md-w-25pc">
-            <div class="flex justify-around my-8">
-
-                <!-- GitHub -->
-                <a href="https://github.com/econxbr" target="_blank"
-                    class="relative p-5 bg-green br-round black hover-scale-up-1 ease-400"><i
-                        data-feather="github"
-                        class="absolute-center h-4"></i></a>
-
-                <!-- LinkedIn -->
-                <a href="https://www.linkedin.com/company/econxbr/"
-                    target="_blank"
-                    class="relative p-5 bg-green br-round black hover-scale-up-1 ease-400"><i
-                        data-feather="linkedin"
-                        class="absolute-center h-4"></i></a>
-
-                <!-- Instagram -->
-                <a href="https://www.instagram.com/econxbr"
-                    target="_blank"
-                    class="relative p-5 bg-green br-round black hover-scale-up-1 ease-400"><i
-                        data-feather="instagram"
-                        class="absolute-center h-4"></i></a>
-            </div>
-        </div>
-    </div>
-</footer>
+    </footer>
+    
+    
 <!-- Final Footer - Copyright and Credits -->
-<div class="bg-indigo-lightest-20 white container mx-auto flex flex-col md:flex-row justify-between p-4">
+<div class="container mx-auto flex flex-col md:flex-row justify-between p-4">
     <div class="flex items-center order-1">
-            <p class="mr-2 text-sm">Versão 2.0.2024</p>
+            <p class="mr-2 text-sm">Versão 1.0.2025</p>
         </div>
         <div class="flex items-center order-2">
-        <p class="mr-2 text-sm">&copy;2024 ECONX. Todos os direitos reservados.</p>
+        <p class="mr-2 text-sm">&copy;2025 ECONX. Todos os direitos reservados.</p>
         </div>
         <div class="flex items-center order-3">
         <p class="mr-2 text-sm">Desenvolvido por</p>
-        <a href="https://www.econx.com.br" target="_blank" class="flex items-center">
-            <img src="assets/icons/codever_logo.png" alt="ECONX Tecnologia" class="h-4 text-center transition duration-300 hover:scale-125">
+        <a href="https://www.codever.com.br" target="_blank" class="flex items-center">
+            <img src="assets/icons/econx-h.svg" alt="ECONX Tecnologia" class="h-4 text-center transition duration-300 hover:scale-125">
         </a>
     </div>
 </div>
 
 <!-- Back to top button -->
-<button id="back-to-top" class="fixed bottom-12 right-4 green text-white p-2 rounded-full shadow-md transition-opacity duration-300">
+<button id="back-to-top" class="fixed bottom-12 right-4 bg-blue-600 text-white hoover:bg-blue-400 p-2 rounded-full shadow-md transition-opacity duration-300">
     <i>Back to top</i>
 </button>
 
@@ -336,5 +205,6 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log("Página carregada com sucesso!");
 });
 </script>
+<script src="/src/js/script.js"></script>
 </body>
 </html>
