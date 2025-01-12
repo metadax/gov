@@ -1,12 +1,16 @@
-/* Padrões de Cor
+:root {
+    --indigo-dark: #5955D9;
+    --indigo-medium: #5F65D9;
+    --indigo-light: #7E84F2;
+    --black: #0D0D0D;
+    --white: #FFFFFF;
+}
 
-Indigo Escuro: #5955D9
-Indigo Médio: #5F65D9
-Indigo Claro: #7E84F2
-Preto: #0D0D0D
-Branco: #525252 */
-
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body {
+    background-color: var(--indigo-light);
+    color: var(--black);
+    font-family: 'Varela Round', Arial, sans-serif;
+}
 
 html {
     scroll-behavior: smooth;
@@ -16,12 +20,6 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
 }
 
 header {
@@ -110,6 +108,21 @@ footer .social-media a {
     margin: 0 10px;
 }
 
+.button-primary {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.button-primary:hover {
+    background-color: #0056b3;
+}
+
+
 @media (max-width: 768px) {
     header nav ul {
         text-align: center;
@@ -188,4 +201,48 @@ footer .social-media a {
 
 .fw-900 {
     font-weight: 900;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup.hidden {
+    display: none;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.popup-content p {
+    margin: 0 0 20px;
+    font-size: 1rem;
+}
+
+.popup-content button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.popup-content button:hover {
+    background-color: #0056b3;
 }

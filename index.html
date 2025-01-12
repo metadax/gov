@@ -47,8 +47,49 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="assets/css/styles.css"/>
+    <style>
+        .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup.hidden {
+    display: none;
+  }
+  
+  .popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .popup-content button {
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .popup-content button:hover {
+    background: #0056b3;
+  }
+    </style>
     </head>
+
 <body class="bg-gray-10 text-gray-800 font-sans">
+
     <!-- Header -->
     <header class="bg-white shadow">
         <div class="container mx-auto flex justify-between items-center py-4 px-6">
@@ -89,42 +130,49 @@
             <div class="bg-white shadow-md rounded-lg p-6">
                 <h2 class="text-xl font-semibold mb-4">Receitas</h2>
                 <p class="text-gray-600">Informações sobre as fontes de receita da ECONX, incluindo contratos, parcerias e serviços prestados.</p>
-                <a href="#" target="_blank noreferrer noopener" noreferrer noopener class="text-blue-600 mt-4 inline-block hover:underline">Acesse nosso Relatório de Receitas 2024</a>
+                <a href="/docs/receitas/PORTAL DA TRANSPARÊNCIA _ ECONX - 2024 - RECEITAS.pdf" target="_blank" rel="noreferrer noopener" class="text-blue-600 mt-4 inline-block hover:underline">Acesse nosso Relatório de Receitas 2024</a>
             </div>
 
             <!-- Despesas -->
             <div class="bg-white shadow-md rounded-lg p-6">
                 <h2 class="text-xl font-semibold mb-4">Despesas</h2>
                 <p class="text-gray-600">Detalhamento das principais despesas operacionais, investimentos e custos administrativos.</p>
-                <a href="#" target="_blank noreferrer noopener" noreferrer noopener class="text-blue-600 mt-4 inline-block hover:underline">Consulte nosso Relatório de Despesas 2024</a>
+                <a href="/docs/despesas/PORTAL DA TRANSPARÊNCIA _ ECONX - 2024 - DESPESAS.pdf" target="_blank" rel="noreferrer noopener" class="text-blue-600 mt-4 inline-block hover:underline">Consulte nosso Relatório de Despesas 2024</a>
             </div>
 
-            <!-- Licitações -->
+            <!-- Balanço -->
             <div class="bg-white shadow-md rounded-lg p-6">
-                <h2 class="text-xl font-semibold mb-4">Licitações</h2>
-                <p class="text-gray-600">Informações sobre processos licitatórios em que a ECONX participou ou está participando.</p>
-                <a href="#" target="_blank noreferrer noopener" noreferrer noopener class="text-blue-600 mt-4 inline-block hover:underline">Veja nossas Licitações Recentes</a>
+                <h2 class="text-xl font-semibold mb-4">Balanço</h2>
+                <p class="text-gray-600">Balanço patrimonial, contendo as informações de receitas, despesas, bens materiais e imateriais, patentes e registros, catalogados do último exercício.</p>
+                <a href="/docs/balanco/PORTAL DA TRANSPARÊNCIA _ ECONX - 2024 - BALANÇO.pdf" target="_blank" rel="noreferrer noopener" class="text-blue-600 mt-4 inline-block hover:underline">Veja nosso balanço</a>
             </div>
 
             <!-- Folhas de Pagamento -->
             <div class="bg-white shadow-md rounded-lg p-6">
                 <h2 class="text-xl font-semibold mb-4">Folhas de Pagamento</h2>
                 <p class="text-gray-600">Dados sobre a remuneração de nossos colaboradores, respeitando a privacidade e conformidade legal.</p>
-                <a href="#" target="_blank noreferrer noopener" noreferrer noopener class="text-blue-600 mt-4 inline-block hover:underline">Acesse a Folha de Pagamento de Dezembro de 2024</a>
+                <a href="" target="_blank" rel="noreferrer noopener" class="text-blue-600 mt-4 inline-block hover:underline">Acesse a Folha de Pagamento de Dezembro de 2024</a>
+            </div>
+
+            <!-- Licitações -->
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <h2 class="text-xl font-semibold mb-4">Licitações</h2>
+                <p class="text-gray-600">Informações sobre processos licitatórios em que a ECONX participou ou está participando.</p>
+                <a href="" target="_blank" rel="noreferrer noopener" class="text-blue-600 mt-4 inline-block hover:underline">Veja nossas Licitações Recentes</a>
             </div>
 
             <!-- Convênios -->
             <div class="bg-white shadow-md rounded-lg p-6">
-                <h2 class="text-xl font-semibold mb-4">Convênios</h2>
+                <h2 class="text-xl font-semibold mb-4">Convênios e Parcerias</h2>
                 <p class="text-gray-600">Detalhes sobre convênios firmados com outras entidades, incluindo objetivos e resultados alcançados.</p>
-                <a href="#" target="_blank noreferrer noopener" noreferrer noopener class="text-blue-600 mt-4 inline-block hover:underline">Conheça nossos Convênios Ativos</a>
+                <a href="/docs/parceiros/PORTAL DA TRANSPARÊNCIA _ ECONX - 2024 - PARCERIAS.pdf" target="_blank" rel="noreferrer noopener" class="text-blue-600 mt-4 inline-block hover:underline">Conheça nossos Convênios Ativos</a>
             </div>
 
             <!-- Leis e Decretos -->
             <div class="bg-white shadow-md rounded-lg p-6">
                 <h2 class="text-xl font-semibold mb-4">Leis e Decretos</h2>
                 <p class="text-gray-600">Informações sobre legislações e decretos que impactam as operações da ECONX.</p>
-                <a href="#" target="_blank noreferrer noopener" noreferrer noopener class="text-blue-600 mt-4 inline-block hover:underline">Leia as Leis e Decretos Relevantes</a>
+                <a href="/docs/legal/Leis e Decretos.pdf" target="_blank" rel="noreferrer noopener" class="text-blue-600 mt-4 inline-block hover:underline">Leia as Leis e Decretos Relevantes</a>
             </div>
         </div>
     </section>
@@ -204,6 +252,13 @@
     </div>
 </div>
 
+<div class="popup hidden" id="popup">
+    <div class="popup-content">
+      <p>Nenhuma informação encontrada!</p><br>
+      <button id="closePopup">Fechar</button>
+    </div>
+  </div>
+
 <!-- Back to top button -->
 <button id="back-to-top" class="fixed bottom-12 right-4 bg-blue-600 text-white hoover:bg-blue-400 p-2 rounded-full shadow-md transition-opacity duration-300">
     <i>Back to top</i>
@@ -225,5 +280,33 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 <script src="/src/js/script.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const links = document.querySelectorAll('a[href=""]');
+    const popup = document.getElementById("popup");
+    const closePopup = document.getElementById("closePopup");
+  
+    // Adiciona o evento de clique em links com href=""
+    links.forEach(link => {
+      link.addEventListener("click", event => {
+        event.preventDefault(); // Previne o comportamento padrão
+        popup.classList.remove("hidden"); // Mostra o popup
+      });
+    });
+  
+    // Fecha o popup ao clicar no botão "Fechar"
+    closePopup.addEventListener("click", () => {
+      popup.classList.add("hidden");
+    });
+  
+    // Fecha o popup ao clicar fora da área do popup
+    popup.addEventListener("click", event => {
+      if (event.target === popup) {
+        popup.classList.add("hidden");
+      }
+    });
+  });
+  
+</script>
 </body>
 </html>
