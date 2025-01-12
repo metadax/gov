@@ -1,0 +1,113 @@
+/* Padrões de Cor
+
+Indigo Escuro: #5955D9
+Indigo Médio: #5F65D9
+Indigo Claro: #7E84F2
+Preto: #0D0D0D
+Branco: #525252 */
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    scrollbar-color: #5955D9 #0d0d0d;
+}
+
+body {
+    font-family: 'Varela Round', sans-serif !important;
+}
+
+/* Back to Top Bottom Definitions */
+.fixed {
+    position: fixed;
+}
+
+.bottom-12 {
+    bottom: 3rem; /* 12 * 0.25rem */
+}
+
+.right-4 {
+    right: 1rem; /* 4 * 0.25rem */
+}
+
+.green {
+    background-color: #10B981; /* Tailwind's green-500 */
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.p-2 {
+    padding: 0.5rem; /* 2 * 0.25rem */
+}
+
+.rounded-full {
+    border-radius: 9999px;
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.transition-opacity {
+    transition-property: opacity;
+    transition-duration: 300ms;
+}
+
+.duration-300 {
+    transition-duration: 300ms;
+}
+
+.w-10 {
+    width: 2.5rem; /* 10 * 0.25rem */
+}
+
+.cursor {
+    font-weight: 100;
+    color: #ffffff;
+    font-size: 1.2rem; /* Ajuste do tamanho */
+    margin-left: 0.1rem; /* Um leve espaçamento */
+    animation: blinkCursor 0.7s steps(1) infinite;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+/* Animação do cursor */
+@keyframes blinkCursor {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    50%, 100% {
+        opacity: 0;
+    }
+}
+
+.fs-l2 {
+    font-size: 1.5rem; /* Tamanho menor */
+}
+
+.lh-1-5 {
+    line-height: 1.5;
+}
+
+.md-fs-l1 {
+    font-size: 2rem; /* Tamanho menor em dispositivos maiores */
+}
+
+.md-lh-1 {
+    line-height: 1;
+}
+
+.fw-900 {
+    font-weight: 900;
+}

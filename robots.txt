@@ -1,0 +1,2 @@
+# robots.txt
+User-agent: *           # Permite o acesso a todo o restante do site

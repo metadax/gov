@@ -1,0 +1,102 @@
+/* Efeito de Rolagem Suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos globais */
+body {
+    color: #333;
+    scroll-behavior: smooth;
+    background-color: white;
+    padding-top: 64px; /* Adicione este padding para compensar o header fixo */
+}
+
+/* Estilos do header e menu */
+header {
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.curamente-menu {
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.curamente-menu-list {
+    display: flex;
+    align-items: center;
+}
+
+.curamente-menu-item {
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.curamente-cta-button {
+    margin-left: 1rem;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 899px) {
+    .curamente-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #343434; /* Cor de fundo do menu mobile */
+        padding: 1rem;
+    }
+
+    .curamente-menu.show {
+        display: block;
+    }
+
+    #menu-toggle {
+        position: absolute;
+        right: 20px; /* Ajuste conforme necessário para a distância da borda direita */
+        top: 50%; /* Centraliza verticalmente em relação ao header */
+        transform: translateY(-50%); /* Corrige o alinhamento vertical */
+    }
+
+    .curamente-menu-list {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .curamente-menu-item {
+        width: 100%;
+        padding: 0.5rem 0;
+    }
+
+    .curamente-cta-button {
+        margin-left: 0;
+        margin-top: 1rem;
+        width: 100%;
+    }
+}
+
+@media (min-width: 900px) {
+    .curamente-menu {
+        display: flex !important;
+    }
+
+    #menu-toggle {
+        display: none !important;
+    }
+}
+
+/* Remova ou comente estilos duplicados ou desnecessários */
+
+.text-shadow-md {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.text-shadow-lg {
+    text-shadow: 0 4px 6px rgba(0,0,0,0.5);
+}
