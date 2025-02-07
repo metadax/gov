@@ -75,9 +75,10 @@ backToTopButton.addEventListener("click", (e) => {
 const texts = [
   "Transparência ",
   "Informação ",
-  "Sustentabilidade ",
+  "Governança ",
   "Compromisso ",
-  "Futuro "
+  "Futuro ",
+  "Segurança "
 ];
 let currentTextIndex = 0;
 let charIndex = 0;
